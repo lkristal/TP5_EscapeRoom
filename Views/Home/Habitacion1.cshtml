@@ -1,0 +1,23 @@
+<h1>Habitacion 1</h1>
+<div class = "text-center">
+    Resuelve la siguiente sopa de letras e identifica la primera letra que aparece luego de cada palabra encontrada. (Según el orden de la lista)
+     Saltear si no hay una letra posterior.
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12227015-prg_sala_de_escape.html"></iframe>
+</div>
+<div class="container mt-4">
+    <form action='@Url.Action("Habitacion","Home")' method="POST">
+        <input type="hidden" name="Sala" value=1>
+        <input type="text" class="form-control mb-2" name="Clave" placeholder="Ingrese la clave">
+        <input type="submit"  class="btn btn-primary mb-2" value="Resolver"> 
+    </form>
+    @{
+        if (ViewBag.MensajeError!=null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.MensajeError
+            </div>
+        }
+    }
+</div>

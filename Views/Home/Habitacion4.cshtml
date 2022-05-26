@@ -1,0 +1,22 @@
+<h1>Habitacion 4</h1>
+<div class = "text-center">
+    Cual es el resultado final?
+</div>
+<img src="/acertijo.jpg" class="img-fluid" alt="...">
+
+<div class="container mt-4">
+    <form action='@Url.Action("Habitacion","Home")' method="POST">
+        <input type="hidden" name="Sala" value=4>
+        <input type="text" class="form-control mb-2" name="Clave" placeholder="Ingrese la clave">
+        <input type="submit"  class="btn btn-primary mb-2" value="Resolver"> 
+    </form>
+    @{
+        if (ViewBag.MensajeError!=null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.MensajeError
+            </div>
+        }
+    }
+</div>
+

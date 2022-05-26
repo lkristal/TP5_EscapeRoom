@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net5.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/490bb628-0b1f-4128-b875-595454e81038/resourceGroups/KristalEscape/providers/Microsoft.Web/sites/KristalEscape"
+}
